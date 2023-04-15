@@ -19,13 +19,13 @@ const App = () => {
         <h2>
           what are you going to do ?
         </h2>
+        <TaskForm  btnText="Create Task"/>
   
        
       </div>
       <div>
       <h2>Your tasks:</h2>
-      <p>list</p>
-      <h1>Content..</h1>
+      <TaskList />
       </div>
       </main>
       <Footer />
