@@ -1,14 +1,15 @@
-import React from "react";
+import React, { useState } from "react";
 import Header from '../components/Header'
 import Footer from '../components/Footer';
 import mainStyle from './App.module.css';
 import  TaskList from '../components/TaskList';
 import TaskForm from  '../components/TaskForm';
+import { ITask } from "../interfaces/Task";
 
 
 
 const App = () => {
-
+const [ taskList ,setTaskList] =  useState<ITask[]>([])
 
   return (
       <>
@@ -19,13 +20,13 @@ const App = () => {
         <h2>
           what are you going to do ?
         </h2>
-        <TaskForm  btnText="Create Task"/>
+        <TaskForm taskList={taskList} setTaskList={setTaskList}  btnText="Create Task"/>
   
        
       </div>
       <div>
       <h2>Your tasks:</h2>
-      <TaskList />
+      <TaskList  />
       </div>
       </main>
       <Footer />
