@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Header from '../components/Header'
 import Footer from '../components/Footer';
 import mainStyle from './App.module.css';
@@ -20,6 +20,12 @@ const [ taskToUpdate, setTaskToUpdate] = useState<ITask | null>(null);
       })
     )
   }
+
+  useEffect(()=> {
+  hideShowModal(false)
+ 
+
+  })
 
   const hideShowModal = (display:boolean) => {
       const modal = document.querySelector("#modal");
