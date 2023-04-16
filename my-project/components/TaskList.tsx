@@ -5,9 +5,11 @@ import StyleSheetList from './TaskList.module.css'
 interface Props {
 taskList: ITask[];
 handleDelete(id:number):void;
+handleEdit(task:ITask):void;
+
 }
 
-const TaskList = ({ taskList, handleDelete }:Props) => {
+const TaskList = ({ taskList, handleDelete, handleEdit }:Props) => {
   return (
     <div>
       {taskList.length > 0 ? (
@@ -20,7 +22,7 @@ const TaskList = ({ taskList, handleDelete }:Props) => {
           </div>
 
           <div className={ StyleSheetList.actions}>
-            <i className='bi bi-pencil'></i>
+            <i className='bi bi-pencil' onClick={()=> handleEdit(elementTask)}></i>
             <i className='bi bi-trash' onClick={() => handleDelete(elementTask.id)}></i>
             </div>
       </div>
