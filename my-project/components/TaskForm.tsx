@@ -22,7 +22,7 @@ const TaskForm = ({btnText, taskList, setTaskList}:Props) => {
 
       setTitle('');
       setDifficulty(0);
-      console.log(taskList)
+      // console.log(taskList)
   }
 
   const handleChange = (e:ChangeEvent<HTMLInputElement>) => {
@@ -44,7 +44,7 @@ const TaskForm = ({btnText, taskList, setTaskList}:Props) => {
       </div>
       <div className={taskFormStyles.input_container}>
       <label htmlFor='dificulty'>Difficulty:</label>
-      <input type="text" id="dificulty"  name='difficulty' onChange={handleChange}  placeholder='Enter the task difficulty'/>
+      <input type="number" id="dificulty" value={difficulty}  name='difficulty' onChange={handleChange}  placeholder='Enter the task difficulty'/>
       </div>
     <input type='submit' value={btnText} />
 
