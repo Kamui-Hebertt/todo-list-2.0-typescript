@@ -6,7 +6,7 @@ const Header:React.FC = () => {
 
   return (
     <header className={styles.header}>
-      <h1>Hello</h1>
+      <h1>To Do List</h1>
    
        
     </header>

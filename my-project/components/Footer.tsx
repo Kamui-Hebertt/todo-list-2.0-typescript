@@ -7,7 +7,7 @@ const Footer:React.FC = () => {
   return (
     <footer className={styleFooter.footer}>
 
-      <h1>footer</h1>
+      <p>Created by Hebert Nascimento</p>
    
        
     </footer>

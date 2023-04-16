@@ -1,0 +1,57 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  max-width: 450px;
+  margin: 0 auto;
+
+  justify-content: center;
+  align-items: center;
+}
+
+.form input {
+  padding: 8px 15px;
+  margin-bottom: 1.5rem;
+  
+  border-radius: 0;
+  border: 1px solid #282c34;
+  width: 20rem;
+
+}
+
+.form input[type="submit"] {
+  background-color: #61dafb;
+  border: 1px solid #61dafb;
+  color: #000;
+  transform: 5s;
+  width: 22rem;
+  cursor: pointer;
+
+  margin-left: 1.9rem;
+}
+
+.form input[type="submit"]:hover {
+  background-color:#fff;
+  border-color: #282c34;
+  transform: 5s;
+
+
+}
+
+.input-container {
+  display:flex;
+  flex-direction: column;
+  text-align: center;
+  
+}
+
+
+.input-container label {
+  font-weight: bold;
+  margin-bottom: .4em;
+}
+
+.form input[id="dificulty"] {
+margin-right: 1.9rem;
+
+
+}
